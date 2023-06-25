@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+// 1st option to handle big images
+// .landscape {
+//   max-width: 500px;
+//   width: 100%;
+//   height: auto;
+// }
+
+.landscape[alt] {
+  font-style: italic;
+  font-size: 24px;
+  color: #aaa;
+}
+
+// 2nd option to handle big images
+.landscape {
+  height: 200px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.landscape-2 {
+  height: 200px;
+  width: 400px;
+}
+
+.landscape {
+  transition: filter 1s;
+}
+
+.landscape:hover {
+  filter: blur(5px) grayscale(50%);
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-video {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.content-wrapper {
+  height: 100%;
+  background-color: rgba(#000000, 0.7);
+}
+
+.bg-test {
+  padding: 50px;
+  background: no-repeat center url("./src/1200px-Silver_star.png");
+}

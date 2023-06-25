@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="img-container">
+        <div>
+          <img
+            src="https://s3-prod-europe.autonews.com/s3fs-public/TR-Overview-technology-park.jpg"
+            alt="landscape"
+            class="landscape"
+          />
+        </div>
+        <div>
+          <img
+            src="https://s3-prod-europe.autonews.com/s3fs-public/TR-Overview-technology-park.jpg"
+            alt="landscape"
+            class="landscape-2"
+          />
+        </div>
+      </div>
+      <picture>
+        <source
+          media="(max-width: 320px)"
+          srcset="https://via.placeholder.com/100"
+        />
+        <source
+          media="(max-width: 420px)"
+          srcset="https://via.placeholder.com/150"
+        />
+        <img src="https://via.placeholder.com/200" />
+      </picture>
+      <div class="bg-test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+        ratione inventore cumque soluta nesciunt, quo itaque, quidem aliquam
+        fuga eaque, a debitis! Cupiditate a cumque molestiae ipsa natus!
+        Veritatis, sit.
+      </div>
+    </div>
+    <video class="bg-video" loop muted>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
